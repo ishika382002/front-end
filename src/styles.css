@@ -2769,9 +2769,9 @@ strong.amplify-text {
 }
 [data-amplify-authenticator] [data-amplify-container] {
   /* place-self: right; */
-  margin-left: 950px;
+  margin-left: 950px !important;
   /* margin-right: -400px; */
-  margin-top: 200px;
+  margin-top: 200px !important;
   position: fixed !important;
 }
 @media (min-width: 30rem) {
