@@ -1,0 +1,129 @@
+[{
+        "title": "Getting Started",
+        "icon": "bi-ticket-detailed-fill",
+        "childrens": [{
+                "title": "View",
+                "path": "/view"
+            },
+            {
+                "title": "Create",
+                "path": "/create"
+            },
+            {
+                "title": "Modify",
+                "path": "/modify"
+            },
+            {
+                "title": "Reconfigure",
+                "path": "/reconfigure"
+            },
+            {
+                "title": "Delete",
+                "path": "/delete"
+            },
+            {
+                "title": "Deploy",
+                "path": "/deploy"
+            }
+        ]
+    },
+
+
+    {
+        "title": "Products",
+        "icon": "bi-text-left",
+        "childrens": [{
+                "title": "Devices",
+                "path": "/devices",
+
+                "childrens": [{
+                    "title": "CSR1000v",
+                    "path": "/devices"
+                }]
+            },
+            {
+                "title": "Connections",
+                "path": "/connections"
+            },
+            {
+                "title": "Service Profiles",
+                "path": "/service_profiles"
+            },
+            {
+                "title": "Cloud Transit",
+                "path": "/cloud_transit"
+            },
+            {
+                "title": "Reference Architecture",
+                "path": "/reference_architecture"
+            },
+            {
+                "title": "Pricing",
+                "path": "/pricing"
+            }
+        ]
+    },
+
+    {
+        "title": "APIs",
+        "icon": "bi-book-half",
+        "childrens": [{
+                "title": "Templates",
+                "path": "/templates"
+            },
+            {
+                "title": "Developer Forum",
+                "path": "/developer_forum",
+                "childrens": [{
+                        "title": "Use Cases",
+                        "path": "use_cases"
+                    },
+                    {
+                        "title": "Community Discussion",
+                        "path": "/community_discussion"
+                    },
+                    {
+                        "title": "Onboarding",
+                        "path": "/developer_forum/onboarding"
+                    }
+                ]
+            }
+        ]
+    },
+
+    {
+        "title": "Troubleshooting Tips",
+        "icon": "bi-boxes",
+        "childrens": [{
+                "title": "Terraform",
+                "path": "/terraform"
+            },
+            {
+                "title": "Ansible",
+                "path": "/ansible"
+            },
+            {
+                "title": "AWS",
+                "path": "/aws"
+            },
+            {
+                "title": "Morpheus",
+                "path": "/morpheus"
+            }
+        ]
+    },
+
+    {
+        "title": "Equinix",
+        "icon": "bi-bar-chart-steps",
+        "childrens": [{
+                "title": "Products",
+                "path": "/products"
+            },
+            {
+                "title": "Services",
+                "path": "/services"
+            }
+        ]
+    }
+]

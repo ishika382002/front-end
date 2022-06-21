@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-ishika3-dev-183709-authRole",
+      "UnauthRoleArn": "arn:aws:iam::965403657359:role/amplify-ishika3-dev-183709-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::965403657359:role/amplify-ishika3-dev-183709-authRole",
+      "Region": "eu-west-2",
+      "DeploymentBucketName": "amplify-ishika3-dev-183709-deployment",
+      "UnauthRoleName": "amplify-ishika3-dev-183709-unauthRole",
+      "StackName": "amplify-ishika3-dev-183709",
+      "StackId": "arn:aws:cloudformation:eu-west-2:965403657359:stack/amplify-ishika3-dev-183709/be410150-efd0-11ec-a89b-02f73bc6b6b6",
+      "AmplifyAppId": "d2gb2koqpbdox1"
+    },
+    "categories": {
+      "auth": {
+        "ishika384e5ff69": {}
+      }
+    }
+  }
+}
