@@ -26,3 +26,31 @@ export const MenuItems = [{
     },
 ];
 
+export const MenuItems1 = [{
+    title: 'ServiceProfiles',
+    path: '/Services',
+    cName: 'dropdown-link'
+},
+{
+    title: 'Virtual Machines',
+    path: '/VirtualMachines',
+    cName: 'dropdown-link'
+},
+{
+    title: 'ACLs',
+    path: '/ACLs',
+    cName: 'dropdown-link'
+},
+{
+    title: 'Connections',
+    path: '/Connections',
+    cName: 'dropdown-link'
+},
+];
+
+
+
+
+
+
+

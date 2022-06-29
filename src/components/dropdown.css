@@ -13,10 +13,12 @@
 .dropdown-menu li {
     background-color: rgba(128, 128, 128);
     cursor: pointer;
+    transition:0.2s 1s;
 }
 
 .dropdown-menu li:hover {
     background: #6300a9;
+    /* transition-delay:0s; */
 }
 
 .dropdown-menu.clicked {

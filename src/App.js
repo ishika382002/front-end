@@ -10,7 +10,7 @@ import History from "./components/pages/History";
 import Devices from "./components/pages/Pages/Devices";
 import Ansible from "./components/pages/Pages/Ansible";
 import Onboarding from "./components/pages/Pages/Onboarding";
-import Authstate from "./Authstate";
+// import Authstate from "./Authstate";
 import Amplify from "aws-amplify";
 import awsconfig from "./aws-exports";
 import {AmplifyAuthenticator,AmplifySignOut,withAuthenticator} from "@aws-amplify/ui-react";
@@ -33,7 +33,7 @@ function App() {
                 <Route path="/Issues" element={<Issues />} />
                 <Route path="/History" element={<History />} />
                 <Route path="/Guide" element={<Guide />} />
-                <Route path="/ContactUs" element={<ContactUs />} />
+                <Route exact path="/ContactUs" element={<ContactUs />} />
                 <Route path="/SignUp" element={<SignUp />} />
                 <Route path="/Devices" element={<Devices />} />
                 <Route path="/ansible" element={<Ansible />} />
@@ -54,4 +54,4 @@ function App() {
   );
 }
 
-export default withAuthenticator(App);
+export default (App);
