@@ -10,10 +10,18 @@ import History from "./components/pages/History";
 import Devices from "./components/pages/Pages/Devices";
 import Ansible from "./components/pages/Pages/Ansible";
 import Onboarding from "./components/pages/Pages/Onboarding";
+import Createserviceprofile from "./components/pages/Create/Create_serviceprofile";
+import Createconnections from "./components/pages/Create/Create_connections";
+import Createvirtualmachines from "./components/pages/Create/Create_virtualmachines";
+import Createacls from "./components/pages/Create/Create_acls";
 // import Authstate from "./Authstate";
 import Amplify from "aws-amplify";
 import awsconfig from "./aws-exports";
-import {AmplifyAuthenticator,AmplifySignOut,withAuthenticator} from "@aws-amplify/ui-react";
+import {
+  AmplifyAuthenticator,
+  AmplifySignOut,
+  withAuthenticator,
+} from "@aws-amplify/ui-react";
 import { Authenticator } from "@aws-amplify/ui-react";
 // import "@aws-amplify/ui-react/styles.css";
 import "./styles.css";
@@ -22,11 +30,10 @@ Amplify.configure(awsconfig);
 
 function App() {
   return (
-    <Authenticator hideDefault={true}> 
+    <Authenticator hideDefault={true}>
       {({ signOut, user }) => (
         <div className="App">
           <p>
-            
             <Router>
               <Navbar />
               <Routes>
@@ -37,10 +44,20 @@ function App() {
                 <Route path="/SignUp" element={<SignUp />} />
                 <Route path="/Devices" element={<Devices />} />
                 <Route path="/ansible" element={<Ansible />} />
+
                 <Route
                   path="/developer_forum/onboarding"
                   element={<Onboarding />}
                 />
+              </Routes>
+              <Routes>
+                <Route path="/Services" element={<Createserviceprofile />} />
+                <Route
+                  path="/VirtualMachines"
+                  element={<Createvirtualmachines />}
+                />
+                <Route path="/ACLs" element={<Createacls />} />
+                <Route path="//Connections" element={<Createconnections />} />
               </Routes>
             </Router>
           </p>
@@ -54,4 +71,4 @@ function App() {
   );
 }
 
-export default (App);
+export default App;
