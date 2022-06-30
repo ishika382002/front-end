@@ -1,0 +1,18 @@
+.Cardcreate {
+  color: white;
+  background-color: rebeccapurple;
+  height: 250px;
+  width: 250px;
+  margin: 0px;
+  padding: 0px;
+  padding-right: 0;
+  text-align: justify;
+  /* box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1); */
+  transition: 0.4s;
+  /* margin-bottom: 35px; */
+  border-radius: 10px;
+  opacity: 0.8;
+}
+.col-md-3 {
+  padding-left: 80px;
+}

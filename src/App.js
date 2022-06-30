@@ -36,6 +36,9 @@ function App() {
           <p>
             <Router>
               <Navbar />
+              <button className="btn" onClick={signOut}>
+                Sign out
+              </button>
               <Routes>
                 <Route path="/Issues" element={<Issues />} />
                 <Route path="/History" element={<History />} />
@@ -57,14 +60,10 @@ function App() {
                   element={<Createvirtualmachines />}
                 />
                 <Route path="/ACLs" element={<Createacls />} />
-                <Route path="//Connections" element={<Createconnections />} />
+                <Route path="/Connections" element={<Createconnections />} />
               </Routes>
             </Router>
           </p>
-
-          <button className="btn" onClick={signOut}>
-            Sign out
-          </button>
         </div>
       )}
     </Authenticator>
