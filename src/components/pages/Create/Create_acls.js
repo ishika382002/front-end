@@ -2,13 +2,15 @@ import { Button } from "@aws-amplify/ui-react";
 // import Sidebar from "../Guidepages/Sidebar";
 import "../Guide";
 import { Card } from "react-bootstrap";
+// import {imagelogo1} from '...///BTlogo.jpg';
 import "./Cardcreate.css";
-import imagelogo1 from "./download.png";
+
 // import { Button } from "@aws-amplify/ui-react";
 export default function Createacls() {
   return (
     <>
       {/* <Sidebar /> */}
+      <div className="table">
       <div className="row m-5">
         <div className="col-md-3">
           <div className="Cardcreate">
@@ -81,6 +83,7 @@ export default function Createacls() {
             </Card>
           </div>
         </div>
+      </div>
       </div>
     </>
   );
