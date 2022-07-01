@@ -21,6 +21,8 @@ export default function Createconnections() {
                   align={"middle"}
                   className="img"
                 />
+                <br/>
+                <br/>
                 <div className="card-heading">Virtual Machines</div>
               <Card.Body>
                 {/* <Card.Title>Card Title</Card.Title> */}
@@ -50,6 +52,7 @@ export default function Createconnections() {
                   className="img"
                 />
                 <br/>
+                <br/>
                 <div className="card-heading">Router</div>
               </Card.Header>
               <Card.Body>
@@ -78,6 +81,7 @@ export default function Createconnections() {
                   align={"middle"}
                   className="img"
                 />
+                <br/>
                 <br/>
                 <div className="card-heading">SDWAN</div>
               </Card.Header>

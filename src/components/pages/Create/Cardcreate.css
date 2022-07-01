@@ -37,14 +37,18 @@ table{
 .col-md-3 {
   padding-left: 80px;
 }
+.para{
+  width:300px;
+}
 .img{
   margin-left:90px;
   margin-top:10px;
   border-radius:150px;
 }
 .card-heading{
+  width:300px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin-left: 40px;
+  margin-left: 95px;
 }
 .cbtn{
   background-color: white;
