@@ -1,19 +1,27 @@
 .Cardcreate {
   /* color: white; */
+<<<<<<< HEAD
   background-color: #6300a9;
   height: 250px;
   width: 250px;
+=======
+  background-color:#6300a9;
+  height: 300px;
+  width: 300px;
+>>>>>>> cc49a440f7a2509646fbe90d6be28d8c938a4fc7
   margin: 0px;
   padding: 0px;
   padding-right: 0;
   display: inline-block;
   text-align: justify;
+
   /* box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1); */
   transition: 0.4s;
   /* margin-bottom: 35px; */
   border-radius: 10px;
   opacity: 0.8;
 }
+<<<<<<< HEAD
 .card2 {
   margin-left: 300px;
   margin-top: -275px;
@@ -21,6 +29,21 @@
 .card3 {
   margin-top: -275px;
   margin-left: 600px;
+=======
+.card2{
+  margin-left:400px;
+  margin-top:-325px;
+}
+
+.para{
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+}
+
+.card3{
+  margin-top: -325px;
+  margin-left:800px
+>>>>>>> cc49a440f7a2509646fbe90d6be28d8c938a4fc7
 }
 
 table {
@@ -30,6 +53,7 @@ table {
 .col-md-3 {
   padding-left: 80px;
 }
+<<<<<<< HEAD
 .img {
   margin-left: 90px;
   margin-top: 10px;
@@ -119,3 +143,37 @@ table {
   display: inline-block;
   display: flex;
 } */
+=======
+.para{
+  width:300px;
+}
+.img{
+  margin-left:90px;
+  margin-top:10px;
+  border-radius:150px;
+}
+.card-heading{
+  width:300px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-left: 95px;
+}
+.cbtn{
+  background-color: white;
+ color: #6300a9; 
+ width:100px;
+ height:42px;
+ margin-left:90px;
+ border-radius:10px;
+}
+.cbtn:hover{
+  background-color:grey;
+}
+.card-heading3{
+  margin-right:120px;
+
+}
+
+.img2{
+  /* margin-left:150px; */
+}
+>>>>>>> cc49a440f7a2509646fbe90d6be28d8c938a4fc7
