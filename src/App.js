@@ -14,6 +14,7 @@ import Createserviceprofile from "./components/pages/Create/Create_serviceprofil
 import Createconnections from "./components/pages/Create/Create_connections";
 import Createvirtualmachines from "./components/pages/Create/Create_virtualmachines";
 import Createacls from "./components/pages/Create/Create_acls";
+import Home from "./components/pages/Create/Home_SV";
 // import Authstate from "./Authstate";
 import Amplify from "aws-amplify";
 import awsconfig from "./aws-exports";
@@ -25,6 +26,9 @@ import {
 import { Authenticator } from "@aws-amplify/ui-react";
 // import "@aws-amplify/ui-react/styles.css";
 import "./styles.css";
+// import Createconnections from "./components/pages/Create/Create_connections";
+import Home1 from "./components/pages/Create/Home1";
+import Home_SV from "./components/pages/Create/Home_SV";
 
 Amplify.configure(awsconfig);
 
@@ -54,13 +58,14 @@ function App() {
                 />
               </Routes>
               <Routes>
-                <Route path="/Services" element={<Createserviceprofile />} />
+                <Route path="/Services" element={<Home_SV/>} />
                 <Route
                   path="/VirtualMachines"
                   element={<Createvirtualmachines />}
                 />
                 <Route path="/ACLs" element={<Createacls />} />
-                <Route path="/Connections" element={<Createconnections />} />
+                <Route path="/Connections" element={<Home1 />} />
+                
               </Routes>
             </Router>
           </p>

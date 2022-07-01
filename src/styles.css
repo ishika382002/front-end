@@ -2759,6 +2759,7 @@ strong.amplify-text {
   width: var(--amplify-components-authenticator-modal-width);
   height: var(--amplify-components-authenticator-modal-height);
   background-color: white !important;
+  /* background-image: url("../src/background.png"); */
   background-image: url("../src/background.png");
   background-size: cover;
   position: fixed;
