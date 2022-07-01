@@ -1,13 +1,14 @@
 .Cardcreate {
   /* color: white; */
   background-color:#6300a9;
-  height: 250px;
-  width: 250px;
+  height: 300px;
+  width: 300px;
   margin: 0px;
   padding: 0px;
   padding-right: 0;
   display:inline-block;
   text-align: justify;
+
   /* box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1); */
   transition: 0.4s;
   /* margin-bottom: 35px; */
@@ -15,12 +16,18 @@
   opacity: 0.8;
 }
 .card2{
-  margin-left:300px;
-  margin-top:-275px;
+  margin-left:400px;
+  margin-top:-325px;
 }
+
+.para{
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+}
+
 .card3{
-  margin-top: -275px;
-  margin-left:600px
+  margin-top: -325px;
+  margin-left:800px
 }
 
 table{
@@ -33,12 +40,28 @@ table{
 .img{
   margin-left:90px;
   margin-top:10px;
+  border-radius:150px;
 }
 .card-heading{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin-left: 40px;
 }
-.createbtn{
+.cbtn{
   background-color: white;
  color: #6300a9; 
+ width:100px;
+ height:42px;
+ margin-left:90px;
+ border-radius:10px;
+}
+.cbtn:hover{
+  background-color:grey;
+}
+.card-heading3{
+  margin-right:120px;
+
+}
+
+.img2{
+  /* margin-left:150px; */
 }

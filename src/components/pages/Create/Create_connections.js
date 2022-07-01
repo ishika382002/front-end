@@ -2,6 +2,8 @@ import { Button } from "@aws-amplify/ui-react";
 import Sidebar from "../Guidepages/Sidebar";
 import "../Guide";
 import logo1 from './/clip.jpg'
+import logo2 from './/router.jpg'
+import logo3 from './/sdwan.png'
 import { Card } from "react-bootstrap";
 // import { Button } from "@aws-amplify/ui-react";
 export default function Createconnections() {
@@ -23,10 +25,11 @@ export default function Createconnections() {
               <Card.Body>
                 {/* <Card.Title>Card Title</Card.Title> */}
                 <Card.Text>
-                  Some quick example text to build on the card title
-                  <br /> and make up the bulk of the card's content.
+                  <div className="para">
+                  Some quick example text to build on the card title and make up the bulk of the card's content.
+                  </div>
                 </Card.Text>
-                <Button variant="primary">Create</Button>
+                <button className="cbtn" onclick="router">Create</button>
               </Card.Body>
             </Card>
           </div>
@@ -40,21 +43,23 @@ export default function Createconnections() {
             <Card style={{ width: "18rem" }}>
               <Card.Header>
                 <Card.Img
-                  src={logo1}
+                  src={logo2}
                   height={70}
                   width={75}
                   align={"middle"}
                   className="img"
                 />
-                Header
+                <br/>
+                <div className="card-heading">Router</div>
               </Card.Header>
               <Card.Body>
                 {/* <Card.Title>Card Title</Card.Title> */}
                 <Card.Text>
-                  Some quick example text to build on the card title
-                  <br /> and make up the bulk of the card's content.
+                <div className="para">
+                  Some quick example text to build on the card title and make up the bulk of the card's content.
+                  </div>
                 </Card.Text>
-                <Button variant="primary">Create</Button>
+                <button className="cbtn">Create</button>
               </Card.Body>
             </Card>
           </div>{" "}
@@ -67,21 +72,23 @@ export default function Createconnections() {
             <Card style={{ width: "18rem" }}>
               <Card.Header>
                 <Card.Img
-                  src={logo1}
+                  src={logo3}
                   height={70}
                   width={75}
                   align={"middle"}
                   className="img"
                 />
-                Header
+                <br/>
+                <div className="card-heading">SDWAN</div>
               </Card.Header>
               <Card.Body>
                 {/* <Card.Title>Card Title</Card.Title> */}
                 <Card.Text>
-                  Some quick example text to build on the card title
-                  <br /> and make up the bulk of the card's content.
+                <div className="para">
+                  Some quick example text to build on the card title and make up the bulk of the card's content.
+                  </div>
                 </Card.Text>
-                <Button className="createbtn">Create</Button>
+                <button className="cbtn">Create</button>
               </Card.Body>
             </Card>
           </div>

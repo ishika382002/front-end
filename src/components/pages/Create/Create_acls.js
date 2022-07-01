@@ -10,7 +10,6 @@ export default function Createacls() {
   return (
     <>
       {/* <Sidebar /> */}
-      <div className="table">
       <div className="row m-5">
         <div className="col-md-3">
           <div className="Cardcreate">
@@ -83,7 +82,6 @@ export default function Createacls() {
             </Card>
           </div>
         </div>
-      </div>
       </div>
     </>
   );
