@@ -10,11 +10,11 @@ import History from "./components/pages/History";
 import Devices from "./components/pages/Pages/Devices";
 import Ansible from "./components/pages/Pages/Ansible";
 import Onboarding from "./components/pages/Pages/Onboarding";
-import Createserviceprofile from "./components/pages/Create/Create_serviceprofile";
-import Createconnections from "./components/pages/Create/Create_connections";
+// import Createserviceprofile from "./components/pages/Create/Create_serviceprofile";
+// import Createconnections from "./components/pages/Create/Create_connections";
 import Createvirtualmachines from "./components/pages/Create/Create_virtualmachines";
 import Createacls from "./components/pages/Create/Create_acls";
-import Home from "./components/pages/Create/Home_SV";
+// import Home from "./components/pages/Create/Home_SV";
 // import Authstate from "./Authstate";
 import Amplify from "aws-amplify";
 import awsconfig from "./aws-exports";
@@ -29,6 +29,7 @@ import "./styles.css";
 // import Createconnections from "./components/pages/Create/Create_connections";
 import Home1 from "./components/pages/Create/Home1";
 import Home_SV from "./components/pages/Create/Home_SV";
+import Createsvform from "./components/pages/Create/Createsvform";
 
 Amplify.configure(awsconfig);
 
@@ -58,14 +59,14 @@ function App() {
                 />
               </Routes>
               <Routes>
-                <Route path="/Services" element={<Home_SV/>} />
+                <Route path="/Services" element={<Home_SV />} />
                 <Route
                   path="/VirtualMachines"
                   element={<Createvirtualmachines />}
                 />
                 <Route path="/ACLs" element={<Createacls />} />
                 <Route path="/Connections" element={<Home1 />} />
-                
+                <Route path="/Createsvform" element={<Createsvform />} />
               </Routes>
             </Router>
           </p>
