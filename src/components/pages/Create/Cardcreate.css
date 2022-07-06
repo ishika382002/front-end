@@ -191,14 +191,14 @@ table {
   align-items: center;
 }
 .formcreate {
-  width: 800px;
+  /* width: 1800px; */
   /* height: 100px; */
   background-color: #ccb0e0;
   /* padding-bottom: 10rem; */
-  margin-left: 20px;
+  /* margin-left: 20px; */
 }
 input[type="text"] {
-  width: 30rem;
+  width: 35rem;
   /* padding: 12px 20px; */
   /* margin-right: 2500px; */
   margin: 4px 0;
@@ -206,12 +206,27 @@ input[type="text"] {
 .forminput {
   align-items: center;
 }
-#divleft {
+ 
+.pri-left {
   background: #ccb0e0;
   width: 50%;
   float: left;
 }
-#divright {
+
+.pri-right {
+  background: #ccb0e0;
+  width: 50%;
+  float: right;
+  padding-left: 20px;
+}
+
+.ansible-left {
+  background: #ccb0e0;
+  width: 50%;
+  float: left;
+}
+
+.ansible-right {
   background: #650aa7;
   width: 50%;
   float: right;

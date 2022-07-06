@@ -3,9 +3,8 @@
 const Createvmform = () => {
   return (
     <>
-      <div id="divleft">
+      
         <h1> Create a CSR1000V</h1>
-        {/* <div className="formcreate"> */}
         <form id="create" className="formcreate">
           <h3>Device Properties (Terraform Infrastructure)</h3>
           <fieldset>
@@ -16,9 +15,56 @@ const Createvmform = () => {
                 <option value="Review">Review</option>
                 <option value="Deploy">Deploy</option>
               </select>
-              {/* <input type="text" placeholder="Enter Customer type" /> */}
+              </label>
+              </fieldset>
+              
+              <div className="pri-left">
+              <fieldset>
+                <label>    
               <p style={{ color: "purple" }}>
                 <h3>Primary Device (Terraform Infrastructure)</h3>{" "}
+              </p>
+              <p style={{ color: "purple" }}> Device Name </p>
+              <input type="text" placeholder="CSR-LD-1-Pri" />
+              <p style={{ color: "purple" }}>Metro</p>
+              <select name="dropdown">
+                <option value="London">London</option>
+                <option value="Amsterdam">Amsterdam</option>
+              </select>
+              <p style={{ color: "purple" }}>
+                Notifications Email Address(es)*{" "}
+              </p>
+              <input type="email" placeholder="you@bt.com" />
+              <p style={{ color: "purple" }}>Access List Template * </p>
+              {/* <input type="text" placeholder="Enter Service Profile type" /> */}
+              <select name="dropdown">
+                <option value="Cip_acl_demo">CIP ACL Demo</option>
+              </select>
+              <p style={{ color: "purple" }}>SSH Key </p>
+              <input type="text" placeholder="user-sshkey-equinix-MVP" />
+              <p style={{ color: "purple" }}>Hostname </p>
+              <input type="text" placeholder="CSR-LD-1-Pri" />
+              <p style={{ color: "purple" }}>
+                Additional Bandwidth (Optional){" "}
+              </p>
+              <input type="text" placeholder="0" />
+              <p style={{ color: "purple" }}>
+                Additional Standup CLI Commands (Optional){" "}
+              </p>
+              <textarea>0</textarea>
+              <p style={{ color: "purple" }}>
+                Additional Post Configuration CLI Commands *(Optional)
+              </p>
+              <textarea>0</textarea>  
+            </label>
+          </fieldset>
+          </div>
+          
+          <div className="pri-right">
+          <fieldset>
+                <label>
+                <p style={{ color: "purple" }}>
+                <h3>Secondary Device (Terraform Infrastructure)</h3>{" "}
               </p>
               <p style={{ color: "purple" }}> Device Name </p>
               <input type="text" placeholder="CSR-LD-1-Pri" />
@@ -54,7 +100,8 @@ const Createvmform = () => {
               <textarea>0</textarea>
             </label>
           </fieldset>
-          <br />
+          </div>
+
           <fieldset>
             <h3>Device Properties (Terraform Infrastructure)</h3>
             <label>
@@ -136,39 +183,82 @@ const Createvmform = () => {
               <p style={{ color: "purple" }}> BFG Site Service Name </p>
               <input type="text" />
               <p style={{ color: "purple" }}> UID(Optional)</p>
-              <input type="text" placeholder="doesn't Exist" />
+              <input type="text" />
             </label>
           </fieldset>
-        </form>
-        {/* </div> */}
-      </div>
-      <div id="divright">
-        <h1> helloo</h1>
-        <form id="create" className="formcreate">
+
+          <div className="ansible-left">
           <fieldset>
             <label>
+              <h3>Base Configuration (Ansible Infrastructure)</h3>
               <p style={{ color: "purple" }}> Customer Name </p>
-              <input type="text" placeholder="Enter Customer type" />
-              <p style={{ color: "purple" }}>Customer Contact Number </p>
-              <input type="text" placeholder="Enter Customer Contact Number " />
-              <p style={{ color: "purple" }}>Customer Email</p>
-              <input type="email" placeholder="Enter Customer Email" />
-              <p style={{ color: "purple" }}>Service Profile type </p>
-              {/* <input type="text" placeholder="Enter Service Profile type" /> */}
-              <select name="dropdown">
-                <option value="Computer Architecture" selected>
-                  Computer Architecture
-                </option>
-                <option value="Java">Java</option>
-                <option value="Discrete Mathematics">
-                  Discrete Mathematics
-                </option>
-              </select>
-            </label>
-          </fieldset>
+              <input type="text" placeholder="Jane Smith" />
+              <p style={{ color: "purple" }}> Location</p>
+              <input type="text"  placeholder="London"/>
+              <p style={{ color: "purple" }}> Support Contact </p>
+              <input type="text" placeholder="John Barnes"/>
+              <p style={{ color: "purple" }}> Order ID </p>
+              <input type="text" />
+              <p style={{ color: "purple" }}> Hostname</p>
+              <input type="text" placeholder="ce1-am-nl"/>
+              <p style={{ color: "purple" }}> Throughput</p>
+              <input type="text" placeholder="1000" />
+              <p style={{ color: "purple" }}> Software Package </p>
+              <input type="text" placeholder="ipbase"/>
+              <p style={{ color: "purple" }}> On-Prem SSM IP</p>
+              <input type="text" placeholder="213.121.34.131" />
+              <p style={{ color: "purple" }}> Password </p>
+              <input type="password" placeholder="Newpassword01" />
+              <p style={{ color: "purple" }}> SNMP Username</p>
+              <input type="text" placeholder="op5user" />
+              <p style={{ color: "purple" }}> SNMP Authentication Password </p>
+              <input type="password" placeholder="authPass" />
+              <p style={{ color: "purple" }}> SNMP Privacy Password</p>
+              <input type="password" placeholder="privPass" />
+           </label>   
+          </fieldset>  
+          </div>  
+
+
+
+
+          <div className="ansible-right">
+          <fieldset>
+            <label>
+              <h3>Base Configuration (Ansible Infrastructure)</h3>
+              <p style={{ color: "purple" }}> Customer Name </p>
+              <input type="text" placeholder="Jane Smith" />
+              <p style={{ color: "purple" }}> Location</p>
+              <input type="text"  placeholder="London"/>
+              <p style={{ color: "purple" }}> Support Contact </p>
+              <input type="text" placeholder="John Barnes"/>
+              <p style={{ color: "purple" }}> Order ID </p>
+              <input type="text" />
+              <p style={{ color: "purple" }}> Hostname</p>
+              <input type="text" placeholder="ce1-am-nl"/>
+              <p style={{ color: "purple" }}> Throughput</p>
+              <input type="text" placeholder="1000" />
+              <p style={{ color: "purple" }}> Software Package </p>
+              <input type="text" placeholder="ipbase"/>
+              <p style={{ color: "purple" }}> On-Prem SSM IP</p>
+              <input type="text" placeholder="213.121.34.131" />
+              <p style={{ color: "purple" }}> Password </p>
+              <input type="password" placeholder="Newpassword01" />
+              <p style={{ color: "purple" }}> SNMP Username</p>
+              <input type="text" placeholder="op5user" />
+              <p style={{ color: "purple" }}> SNMP Authentication Password </p>
+              <input type="password" placeholder="authPass" />
+              <p style={{ color: "purple" }}> SNMP Privacy Password</p>
+              <input type="password" placeholder="privPass" />
+           </label>   
+          </fieldset>  
+          </div>  
+          <button type="submit" className="submit">
+              Submit
+            </button>
         </form>
-      </div>
+        
     </>
   );
 };
-export default Createvmform;
+export default Createvmform;  
