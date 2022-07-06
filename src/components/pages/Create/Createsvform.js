@@ -25,16 +25,8 @@ const Createsvform = () => {
                 <p style={{ color: "purple" }}>Customer Email</p>
                 <input type="email" placeholder="Enter Customer Email" />
                 <p style={{ color: "purple" }}>Service Profile type </p>
-                {/* <input type="text" placeholder="Enter Service Profile type" /> */}
-                <select name="dropdown">
-                  <option value="Computer Architecture" selected>
-                    Computer Architecture
-                  </option>
-                  <option value="Java">Java</option>
-                  <option value="Discrete Mathematics">
-                    Discrete Mathematics
-                  </option>
-                </select>
+                <input type="text" placeholder="Enter Service Profile type" />
+
                 <p style={{ color: "purple" }}>Service Profile Description </p>
                 <input
                   type="text"
