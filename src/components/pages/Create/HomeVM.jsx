@@ -1,18 +1,19 @@
 import React from 'react';
 // import Createserviceprofile from './Create_serviceprofile';
 // import CarrdData from './CarrdData';
-import CarrdData1 from './CarrdData1';
-import Createconnections from './Create_connections';
+import CarrdDatavm from './CarrdData_VM';
 
-const Home1 =() => {
+import Createvirtualmachines from './Create_virtualmachines';
+
+const Homevm =() => {
     return(
         <>
         <div className='home-carrds'>
-            <Createconnections details ={CarrdData1} />
+            <Createvirtualmachines details ={CarrdDatavm} />
         </div>
         </>
        
     );
 }
 
-export default Home1;
+export default Homevm;

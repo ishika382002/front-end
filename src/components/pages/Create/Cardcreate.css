@@ -1,14 +1,11 @@
 .Cardcreate {
   /* color: white; */
-<<<<<<< HEAD
   background-color: #6300a9;
   height: 250px;
   width: 250px;
-=======
-  background-color:#6300a9;
+  background-color: #6300a9;
   height: 300px;
   width: 300px;
->>>>>>> cc49a440f7a2509646fbe90d6be28d8c938a4fc7
   margin: 0px;
   padding: 0px;
   padding-right: 0;
@@ -21,7 +18,6 @@
   border-radius: 10px;
   opacity: 0.8;
 }
-<<<<<<< HEAD
 .card2 {
   margin-left: 300px;
   margin-top: -275px;
@@ -29,21 +25,20 @@
 .card3 {
   margin-top: -275px;
   margin-left: 600px;
-=======
-.card2{
-  margin-left:400px;
-  margin-top:-325px;
+}
+.card2 {
+  margin-left: 400px;
+  margin-top: -325px;
 }
 
-.para{
-  font-family: 'Times New Roman', Times, serif;
+.para {
+  font-family: "Times New Roman", Times, serif;
   text-align: center;
 }
 
-.card3{
+.card3 {
   margin-top: -325px;
-  margin-left:800px
->>>>>>> cc49a440f7a2509646fbe90d6be28d8c938a4fc7
+  margin-left: 800px;
 }
 
 table {
@@ -53,7 +48,7 @@ table {
 .col-md-3 {
   padding-left: 80px;
 }
-<<<<<<< HEAD
+
 .img {
   margin-left: 90px;
   margin-top: 10px;
@@ -101,7 +96,7 @@ table {
 
 .carrd-description {
   font-size: 12px;
-  font-weight:10;
+  font-weight: 10;
 }
 
 .home-carrds {
@@ -116,26 +111,25 @@ table {
   outline: none;
   border: #fff;
   border-color: black;
-  border-radius: .2cm;
+  border-radius: 0.2cm;
   text-align: center;
   /* margin-left: 150px;
   margin-top: 25px; */
   font-size: 15px;
   font-weight: lighter;
-  color:grey;
+  color: grey;
   cursor: pointer;
-  
 }
 
 .carrd-btn:hover {
   padding: 6px 18px;
   transition: all 0.3s ease-out;
   background-color: transparent;
-  color:white;
-  background-color:grey;
+  color: white;
+  background-color: grey;
   border-radius: 4px;
   /* border: 2px solid var(--primary); */
-  border: 2px solid ;
+  border: 2px solid;
   transition: all 0.3s ease-out;
 }
 
@@ -143,37 +137,82 @@ table {
   display: inline-block;
   display: flex;
 } */
-=======
-.para{
-  width:300px;
+
+.para {
+  width: 300px;
 }
-.img{
-  margin-left:90px;
-  margin-top:10px;
-  border-radius:150px;
+.img {
+  margin-left: 90px;
+  margin-top: 10px;
+  border-radius: 150px;
 }
-.card-heading{
-  width:300px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.card-heading {
+  width: 300px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin-left: 95px;
 }
-.cbtn{
+.cbtn {
   background-color: white;
- color: #6300a9; 
- width:100px;
- height:42px;
- margin-left:90px;
- border-radius:10px;
+  color: #6300a9;
+  width: 100px;
+  height: 42px;
+  margin-left: 90px;
+  border-radius: 10px;
 }
-.cbtn:hover{
-  background-color:grey;
+.cbtn:hover {
+  background-color: grey;
 }
-.card-heading3{
-  margin-right:120px;
-
+.card-heading3 {
+  margin-right: 120px;
 }
-
-.img2{
-  /* margin-left:150px; */
+.submit {
+  background: #6300a9;
+  color: white;
+  /* border-style: outset; */
+  /* border-color: purple; */
+  height: 40px;
+  width: 80px;
+  /* font: bold15px arial, sans-serif; */
+  text-shadow: none;
+  cursor: pointer;
+  border-radius: 0.5rem;
 }
->>>>>>> cc49a440f7a2509646fbe90d6be28d8c938a4fc7
+.submit:hover {
+  background: #6300a9;
+  color: #fff;
+  border: 1px solid #eee;
+  opacity: 0.8;
+  /* border-radius: 20px; */
+  /* box-shadow: 5px 5px 5px #eee; */
+  /* text-shadow: none; */
+}
+.name {
+  padding-bottom: 20px;
+  align-items: center;
+}
+.formcreate {
+  width: 800px;
+  /* height: 100px; */
+  background-color: #ccb0e0;
+  /* padding-bottom: 10rem; */
+  margin-left: 20px;
+}
+input[type="text"] {
+  width: 30rem;
+  /* padding: 12px 20px; */
+  /* margin-right: 2500px; */
+  margin: 4px 0;
+}
+.forminput {
+  align-items: center;
+}
+#divleft {
+  background: #ccb0e0;
+  width: 50%;
+  float: left;
+}
+#divright {
+  background: #650aa7;
+  width: 50%;
+  float: right;
+}

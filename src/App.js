@@ -14,7 +14,8 @@ import Createserviceprofile from "./components/pages/Create/Create_serviceprofil
 import Createconnections from "./components/pages/Create/Create_connections";
 import Createvirtualmachines from "./components/pages/Create/Create_virtualmachines";
 import Createacls from "./components/pages/Create/Create_acls";
-import Home from "./components/pages/Create/Home_SV";
+// import Home_SV from "./components/pages/Create/Home_SV";
+// import Homevm from "./components/pages/Create/HomeVM";
 // import Authstate from "./Authstate";
 import Amplify from "aws-amplify";
 import awsconfig from "./aws-exports";
@@ -25,10 +26,13 @@ import {
 } from "@aws-amplify/ui-react";
 import { Authenticator } from "@aws-amplify/ui-react";
 // import "@aws-amplify/ui-react/styles.css";
+import Createsvform from "./components/pages/Create/Createsvform";
+import Createvmform from "./components/pages/Create/Createvmform";
 import "./styles.css";
 // import Createconnections from "./components/pages/Create/Create_connections";
-import Home1 from "./components/pages/Create/Home1";
+// import Home1 from "./components/pages/Create/Home1";
 import Home_SV from "./components/pages/Create/Home_SV";
+import Homevm from "./components/pages/Create/HomeVM";
 
 Amplify.configure(awsconfig);
 
@@ -58,14 +62,12 @@ function App() {
                 />
               </Routes>
               <Routes>
-                <Route path="/Services" element={<Home_SV/>} />
-                <Route
-                  path="/VirtualMachines"
-                  element={<Createvirtualmachines />}
-                />
+                <Route path="/Services" element={<Home_SV />} />
+                <Route path="/VirtualMachines" element={<Homevm />} />
                 <Route path="/ACLs" element={<Createacls />} />
-                <Route path="/Connections" element={<Home1 />} />
-                
+                <Route path="/Connections" />
+                <Route path="/Createsvform" element={<Createsvform />} />
+                <Route path="/Createvmform" element={<Createvmform />} />
               </Routes>
             </Router>
           </p>

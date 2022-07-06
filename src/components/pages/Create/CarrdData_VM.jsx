@@ -4,12 +4,12 @@ import sdwan from "../Create/sdwan.png";
 import firewall from "../Create/firewall.png";
 
 
-const CarrdData = [
+const CarrdDatavm = [
     
     {
         img:router,
-        title: "Panasonic",
-        cbtn: "create service profile",
+        title: "CSR1000V",
+        cbtn: "create CSR",
         description: "The CSR 1000V Series serves as a secure single-tenant router"
      },
 
@@ -49,5 +49,5 @@ const CarrdData = [
      },    
 ]
 
-export default CarrdData;
+export default CarrdDatavm;
 

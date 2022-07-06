@@ -1,13 +1,11 @@
-
 import { useNavigate } from "react-router";
 import React from "react";
 import { Button } from "@aws-amplify/ui-react";
 
-const Createserviceprofile = (props) => {
+const Createvirtualmachines = (props) => {
   const navigate = useNavigate();
-    const handleClick= () => navigate("/Createsvform", { replace: true });
+  const handleClick = () => navigate("/Createvmform", { replace: true });
   return (
-    
     <>
       {props.details.map((value, index) => (
         <div className="carrd" key={index}>
@@ -19,11 +17,13 @@ const Createserviceprofile = (props) => {
             <p className="carrd-title"> {value.title} </p>
             <p className="carrd-description"> {value.description} </p>
           </div>
-          <button className="carrd-btn"onClick={handleClick} >{value.cbtn}</button>
+          <button className="carrd-btn" onClick={handleClick}>
+            {value.cbtn}
+          </button>
         </div>
       ))}
       ;
     </>
   );
 };
-export default Createserviceprofile;
+export default Createvirtualmachines;
