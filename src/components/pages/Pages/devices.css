@@ -10,21 +10,59 @@
     margin-left: 8.5em;
     margin-right: 2em;
 } */
-
-.heading {
-    /* text-decoration: underline; */
-    /* margin-top: 80px; */
+.img1 {
+    margin-left: 220px;
+    margin-right: 200px;
+    border: 0.5px solid black;
+    border-style: inset;
+    border-radius: 8px;
+    /* filter: drop-shadow(8px 8px 8px black); */
+    /* box-sizing: border-box;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+    transition: 0.4s; */
+  }
+  
+  .img1 :hover {
+    transition: transform 70ms;
+    will-change: transform;
+    transform: translateX(5px);
+  }
+  
+  .heading {
+    text-decoration: underline;
     color: black;
     margin-left: 80px;
     margin-right: 2em;
-    margin-top: 180px;
+    margin-top: 80px;
     font-style: normal;
-}
-
-.text {
+  }
+  
+  .heading1 {
+    text-decoration: underline;
+    color: black;
+    margin-left: 280px;
+    margin-right: 2em;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 25px;
+    margin-top: 0px;
+    font-style: normal;
+  }
+  
+  .heading2 {
+    text-decoration: underline;
+    color: black;
+    margin-left: 0px;
+    margin-right: 2em;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 20px;
+    margin-top: 0px;
+    font-style: normal;
+  }
+  
+  .text1 {
     text-align: justify;
     text-justify: inter-word;
-    font-family: 'Proxima Nova Rg', Roboto, Arial, sans-serif;
+    font-family: "Proxima Nova Rg", Roboto, Arial, sans-serif;
     letter-spacing: 1px;
     line-height: 2;
     font-style: normal;
@@ -34,8 +72,9 @@
     font-weight: 60;
     margin-left: 19em;
     margin-right: 2em;
-}
-
-.side {
+  }
+  
+  .side {
     padding-top: 0.2px;
-}
+  }
+  

@@ -1,0 +1,14 @@
+
+.cloud{
+    margin-left:250px;
+}
+.back{
+    /* background-image: url("./cloud.jpg") !important; */
+    /* background-image: url("./cloud.jpg") !important; */
+    color:#6300a9;
+    background-color:white;
+    align-items: center;
+    font-size: 3rem;
+    margin-left:500px;
+    margin-top: 10px;
+}

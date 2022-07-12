@@ -7,7 +7,12 @@
     font-family: 'Times New Roman', Times, serif;
     font-size: small;
     font-weight: 50;
+    position: fixed;
     /* font-style: oblique; */
+}
+.te{
+    /* margin-top:-120px; */
+    color:black;
 }
 
 .dropdown-menu li {

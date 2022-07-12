@@ -8,6 +8,11 @@ import Createvirtualmachines from './Create_virtualmachines';
 const Homevm =() => {
     return(
         <>
+        <br></br>
+        <br></br>
+        <br></br>
+        
+        <br></br>
         <div className='home-carrds'>
             <Createvirtualmachines details ={CarrdDatavm} />
         </div>

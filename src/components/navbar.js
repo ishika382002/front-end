@@ -70,13 +70,13 @@ export default function Navbar() {
             onMouseEnter={onMouseEnte}
             onMouseLeave={onMouseLeav}
           >
-            <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+            <Link to="/Create" className="nav-links" onClick={closeMobileMenu}>
               Create <i className="fas fa-caret-down" />
               {dropdown1 && <Dropdown1 />}
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/Create" className="nav-links" onClick={closeMobileMenu}>
+            <Link to="/Connections" className="nav-links" onClick={closeMobileMenu}>
               Connections <i className="fas fa-caret-down" />
             </Link>
           </li>
@@ -119,6 +119,7 @@ export default function Navbar() {
           </Link>
         </li>
       </nav>
+     
     </>
   );
 }

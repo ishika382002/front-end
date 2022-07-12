@@ -3,6 +3,7 @@ import Navbar from "./components/navbar";
 import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Issues from "./components/pages/Issues";
+import Create from './components/Create';
 import Guide from "./components/pages/Guide";
 import ContactUs from "./components/pages/ContactUs";
 import SignUp from "./components/pages/SignUp";
@@ -24,8 +25,7 @@ import {
   AmplifySignOut,
   withAuthenticator,
 } from "@aws-amplify/ui-react";
-import { Authenticator } from "@aws-amplify/ui-react";
-// import "@aws-amplify/ui-react/styles.css";
+
 import Createsvform from "./components/pages/Create/Createsvform";
 import Createvmform from "./components/pages/Create/Createvmform";
 import "./styles.css";
@@ -38,16 +38,10 @@ Amplify.configure(awsconfig);
 
 function App() {
   return (
-    <Authenticator hideDefault={true}>
-      {({ signOut, user }) => (
-        <div className="App">
-          <p>
             <Router>
               <Navbar />
-              <button className="btn" onClick={signOut}>
-                Sign out
-              </button>
               <Routes>
+                <Route path="/Create" element={<Create/>}/>
                 <Route path="/Issues" element={<Issues />} />
                 <Route path="/History" element={<History />} />
                 <Route path="/Guide" element={<Guide />} />
@@ -70,10 +64,6 @@ function App() {
                 <Route path="/Createvmform" element={<Createvmform />} />
               </Routes>
             </Router>
-          </p>
-        </div>
-      )}
-    </Authenticator>
   );
 }
 

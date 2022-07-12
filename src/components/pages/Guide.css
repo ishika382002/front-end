@@ -22,7 +22,7 @@ body {
 
 .sidebar {
     width: 260px;
-    margin-top: -38px;
+    margin-top: 79px;
     flex-shrink: 0;
     background-color: rgba(128, 128, 128);
     height: 100%;

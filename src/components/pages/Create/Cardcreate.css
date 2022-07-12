@@ -166,16 +166,25 @@ table {
   margin-right: 120px;
 }
 .submit {
-  background: #6300a9;
-  color: white;
+  /* background: #6300a9;
+  color: white; */
   /* border-style: outset; */
   /* border-color: purple; */
-  height: 40px;
+  /* height: 40px;
   width: 80px;
+  align-items: right;
+  margin: right; */
   /* font: bold15px arial, sans-serif; */
-  text-shadow: none;
+  /* /* text-shadow: none; */
   cursor: pointer;
   border-radius: 0.5rem;
+  background-color: white;
+  color: #6300a9;
+  width: 100px;
+  height: 42px;
+  /* margin-right: -90px; */
+  align-items: center;
+  /* border-radius: 10px; */
 }
 .submit:hover {
   background: #6300a9;
@@ -190,44 +199,128 @@ table {
   padding-bottom: 20px;
   align-items: center;
 }
+fieldset {
+  border: #6300a9;
+}
 .formcreate {
   /* width: 1800px; */
   /* height: 100px; */
-  background-color: #ccb0e0;
+  /* background-color: #c281eb; */
+  background-image: linear-gradient(
+    to left bottom,
+    #ebf6fa,
+    #d2d8f2,
+    #e8f1f8,
+    #ecd7f8,
+    #f2c7fc,
+    #f1cbfa,
+    #f1c4fb,
+    #f5b3fd
+  );
+  /* font-family: ; */
+  /* font-weight: lighter; */
   /* padding-bottom: 10rem; */
   /* margin-left: 20px; */
+  /* font-style: italic; */
 }
-input[type="text"] {
+input[type="text"],
+input[type="password"],
+input[type="email"],
+select,
+textarea {
   width: 35rem;
+  height: 2rem;
+  border-radius: 0.5rem;
   /* padding: 12px 20px; */
   /* margin-right: 2500px; */
   margin: 4px 0;
 }
+
+.p {
+  align-items: center;
+}
 .forminput {
   align-items: center;
 }
- 
+h1 {
+  background-image: linear-gradient(
+    to left bottom,
+    #ebf6fa,
+    #d2d8f2,
+    #e8f1f8,
+    #ecd7f8,
+    #f2c7fc,
+    #f1cbfa,
+    #f1c4fb,
+    #f5b3fd
+  );
+}
 .pri-left {
-  background: #ccb0e0;
+  /* background: #c281eb; */
+  background-image: linear-gradient(
+    to left bottom,
+    #ebf6fa,
+    #d2d8f2,
+    #e8f1f8,
+    #ecd7f8,
+    #f2c7fc,
+    #f1cbfa,
+    #f1c4fb,
+    #f5b3fd
+  );
   width: 50%;
   float: left;
 }
 
 .pri-right {
-  background: #ccb0e0;
+  /* background: #c281eb; */
+  background-image: linear-gradient(
+    to left bottom,
+    #ebf6fa,
+    #d2d8f2,
+    #e8f1f8,
+    #ecd7f8,
+    #f2c7fc,
+    #f1cbfa,
+    #f1c4fb,
+    #f5b3fd
+  );
   width: 50%;
   float: right;
   padding-left: 20px;
 }
 
 .ansible-left {
-  background: #ccb0e0;
+  /* background: #c281eb; */
+  background-image: linear-gradient(
+    to left bottom,
+    #ebf6fa,
+    #d2d8f2,
+    #e8f1f8,
+    #ecd7f8,
+    #f2c7fc,
+    #f1cbfa,
+    #f1c4fb,
+    #f5b3fd
+  );
   width: 50%;
   float: left;
 }
 
 .ansible-right {
-  background: #650aa7;
+  /* background: #c281eb; */
+  background-image: linear-gradient(
+    to left bottom,
+    #ebf6fa,
+    #d2d8f2,
+    #e8f1f8,
+    #ecd7f8,
+    #f2c7fc,
+    #f1cbfa,
+    #f1c4fb,
+    #f5b3fd
+  );
   width: 50%;
   float: right;
 }
+

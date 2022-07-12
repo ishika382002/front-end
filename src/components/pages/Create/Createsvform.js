@@ -5,6 +5,9 @@ const Createsvform = () => {
     <>
       {/* <Sidebar /> */}
       {/* <div className="row m-3 col-md-12"> */}
+      <br/>
+      <br/>
+      <br/>
       <div className="col-md-10">
         {/* <div className="row col-12 d-flex justify-content-center text-white"> */}
         <h1 style={{ color: "#6300a9" }}>Service Profiles</h1>
@@ -25,16 +28,8 @@ const Createsvform = () => {
                 <p style={{ color: "purple" }}>Customer Email</p>
                 <input type="email" placeholder="Enter Customer Email" />
                 <p style={{ color: "purple" }}>Service Profile type </p>
-                {/* <input type="text" placeholder="Enter Service Profile type" /> */}
-                <select name="dropdown">
-                  <option value="Computer Architecture" selected>
-                    Computer Architecture
-                  </option>
-                  <option value="Java">Java</option>
-                  <option value="Discrete Mathematics">
-                    Discrete Mathematics
-                  </option>
-                </select>
+                <input type="text" placeholder="Enter Service Profile type" />
+
                 <p style={{ color: "purple" }}>Service Profile Description </p>
                 <input
                   type="text"
@@ -87,3 +82,5 @@ const Createsvform = () => {
   );
 };
 export default Createsvform;
+
+

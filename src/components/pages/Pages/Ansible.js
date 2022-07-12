@@ -1,25 +1,64 @@
-import Sidebar from '../Guidepages/Sidebar'
-import "../Guide"
-import "./ansible.css"
+import Sidebar from "../Guidepages/Sidebar";
+import "../Guide";
+import "./devices.css";
+import error1 from "./error1.png";
+import error2 from "./error2.png";
+import error3 from "./error3.png";
+import error4 from "./error4.png";
 
-export default function Ansible() {
-    return (
-        <div>
-        <Sidebar/>
-        <h1 className="title"> DEVICES </h1>
-       
-        <h1 className="title"> DEVICES </h1>
-        <h2 className="heading"> Errors in Ansible</h2>
-        <p className='text'>
-          {" "}
-          Error1-By default, lookup return values are marked as unsafe for security reasons. If you trust the outside source your lookup accesses, pass allow_unsafe=True to allow Jinja2 templates to evaluate lookup values.
-<br></br>Error2- This is a conditional check error. Whenever item is passed in condition, it needs to be defined using ‘with_items’ in the same task.
-<br></br>Error3 -Pass wantlist=True to lookups to use in Jinja2 template “for” loops.
-<br></br>Error4- This is a network cli configuration error. While executing the configuration scripts, the ansible is displaying the configuration error. It is indicating that there is some error in the template that is being executed on the CSR.
-<br></br>Error5-This is a network cli configuration error indicating a bad mask for the ip address. This occurred while executing the template and it was picking the old template stored in the repository. Sometimes, the templates are not pushed in the Git repository. So, whether you have committed changes in Git or not, you need to recheck it on the Git repository.
-<br></br>Error6- This a templating error. This usually occurs when there is a ansible expects something else. It is a syntax error.
-        </p>
-        </div>
-    );
-  }
-  
+// import image from "../Pages/Overall_solution.png";
+
+export default function Onboarding() {
+  return (
+    <div>
+      <div className="side">
+        <Sidebar />
+      </div>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+
+      <div className="heading1"> ERROR & TROUBLESHOOTING</div>
+      <p className="text1">
+        ERROR 1:<br></br>
+        <h3 className="temp">No attribute ‘throughput’ </h3>
+        <img src={error1} alt="cant load" width={1200} />
+        <br></br>
+        Solution: By default, lookup return values are marked as unsafe for
+        security reasons. If the outside source is to be trusted for lookup
+        accesses, allow_unsafe=True is passed to allow Jinja2 templates to
+        evaluate lookup values.
+        <br></br>
+        <br></br>
+        <br></br>
+        ERROR 2:<br></br>
+        <h3 className="temp">Conditional Check Error </h3>
+        <img src={error2} alt="cant load" height={36} width={1200} />
+        <br></br>
+        Solution: This is a conditional check error. Whenever item is passed in
+        condition, it needs to be defined using ‘with_items’ in the same task.
+        <br></br>
+        <br></br>
+        <br></br>
+        ERROR 3:<br></br>
+        <h3 className="temp">Invalid data passed </h3>
+        <img src={error3} alt="cant load" width={900} />
+        <br></br>
+        Solution: wantlist=True command is passed to lookups to use in Jinja2
+        template in “for” loops.
+        <br></br>
+        <br></br>
+        <br></br>
+        ERROR 4:<br></br>
+        <h3 className="temp">Invalid input detected</h3>
+        <img src={error4} alt="cant load" width={600} />
+        <br></br>
+        Solution:This is a Network CLI Configuration error. While executing the
+        configuration scripts, Ansible is displaying the configuration error. It
+        is indicating that there is some error in the template that is being
+        executed on the CSR.
+      </p>
+    </div>
+  );
+}

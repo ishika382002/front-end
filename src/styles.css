@@ -5,6 +5,9 @@
  * Do not edit directly
  * Generated on Tue, 14 Jun 2022 23:36:33 GMT
  */
+
+
+
 :root,
 [data-amplify-theme] {
   --amplify-transforms-slide-x-large: translateX(2em);
@@ -1660,6 +1663,7 @@ body {
 }
 
 * {
+  
   box-sizing: border-box;
 }
 
@@ -2760,7 +2764,7 @@ strong.amplify-text {
   height: var(--amplify-components-authenticator-modal-height);
   background-color: white !important;
   /* background-image: url("../src/background.png"); */
-  background-image: url("../src/background.png");
+ background-image: url("../src/background.png") !important;
   background-size: cover;
   position: fixed;
   top: var(--amplify-components-authenticator-modal-top);
@@ -2770,8 +2774,11 @@ strong.amplify-text {
 }
 [data-amplify-authenticator] [data-amplify-container] {
   /* place-self: right; */
-  margin-left: 950px !important;
+  background-image: url("../src/background.png");
+  margin-left: 65px !important;
   /* margin-right: -400px; */
+  margin-bottom:150px !important;
+  
   margin-top: 200px !important;
   position: fixed !important;
 }
